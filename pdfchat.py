@@ -69,7 +69,7 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini Pro 💁")
+    st.header("Chat with Multiple PDF using Gemini Pro 💁")
 
     # Initialise session state for chat history if it doesn't exist
     if 'chat_history' not in st.session_state:
@@ -80,7 +80,7 @@ def main():
     if user_question:
         response = user_input(user_question)
         st.session_state['chat_history'].append(("You", user_question))
-        st.subheader("Gemini's Response is:")
+        st.subheader("Gemini's Response:")
         st.write(response.text)
         st.session_state['chat_history'].append(("Gemini", response.text))
 
@@ -95,7 +95,7 @@ def main():
                 st.session_state['text_chunks'] = text_chunks
                 st.success("Done")
 
-    st.subheader("The Chat History is")
+    st.subheader("Chat History:")
     
     for role, text in st.session_state['chat_history']:
         if role == "Gemini":
