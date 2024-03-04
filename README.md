@@ -1,4 +1,4 @@
-# End-to-End Large Language Model (LLM) Applications with Google Gemini Pro 
+# End-to-End Large Language Model (LLM) Applications powered by Google Gemini Pro 
 Built with Streamlit
 
 ## 1. Langchain-enabled Chat Multi-PDF
@@ -25,5 +25,15 @@ Chat with your very own uploaded Invoice/Financial Statement Image using Google 
 
 (In Progress)
 - Conversational Buffer Memory (Ability for LLM to remember previous queries)
+
+## 3. Youtube Transcript Summary Converter
+Have a Youtube video link? Paste your video link and get a 300-600 word summary of it! Powered by Google Gemini Pro.
+
+### Features:
+- Youtube Video Link Input :white_check_mark:
+- Youtube Transcript API to obtain video transcript :white_check_mark:
+- Gemini Pro LLM summary response for video transcript :white_check_mark:
+- Chat History (Rendered in Chronological Sequence at Bottom) :white_check_mark:
+
 
 
